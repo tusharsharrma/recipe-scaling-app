@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Scaling App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Scaling App</h1>
+
+        <div class="recipe-selection">
+            <h2>Select a Saved Dish</h2>
+            <select id="dish-selector">
+                <option value="" selected>Select a dish...</option>
+            </select>
+        </div>
+
+        <div class="recipe-input">
+            <h2>Add a New Recipe (Base: 100g)</h2>
+            <input type="text" id="dish-name" placeholder="Dish Name">
+            <div id="ingredients-container"></div>
+            <button id="add-ingredient-btn">Add Ingredient</button>
+            <button id="save-dish-btn">Save Recipe</button>
+        </div>
+
+        <div class="target-input">
+            <h2>Scale a Recipe</h2>
+            <input type="number" id="target-weight" placeholder="Enter target weight in grams" min="1">
+        </div>
+
+        <button id="calculate-btn">Calculate</button>
+
+        <div class="result-output">
+            <h2>Scaled Recipe</h2>
+            <ul id="scaled-recipe"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
